@@ -1,4 +1,4 @@
-function DataHandler() {
+function DataHandler(props) {
   const [validDataset, setValidDataset] = useState(false);
   const [datasetInfo, setDatasetInfo] = useState({
     name: null,
