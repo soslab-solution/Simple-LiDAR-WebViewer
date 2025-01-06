@@ -13,21 +13,6 @@ fh = FrameHandler(dataset_dir="./samples")
 
 app = FastAPI()
 
-# serve static files from the "static" directory
-app.mount("/static", StaticFiles(directory="static"), name="static")
-
-@app.get("/", response_class=HTMLResponse)
-async def root():
-    return """
-        <html>
-            <head>
-                <title>SOSLAB LiDAR Web app</title>
-            </head>
-            <body>
-                <h1> ... </h1>
-            </body>
-        </html>
-    """
 
 @app.post('/api/loadDataset')
 async def loadDataset(request: Request):
