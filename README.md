@@ -22,5 +22,9 @@
    $ cd app
    $ uvicorn main:app --host 0.0.0.0 --port 7779 --reload
    ```
-3. app 접속  
-   `http://localhost:7779/static/index.html`
+3. Run Frontend
+   ```bash
+   $ cd app/frontend
+   $ npm install
+   $ npm run dev
+   ```
